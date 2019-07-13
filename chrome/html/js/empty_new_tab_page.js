@@ -8,7 +8,7 @@ chrome.storage.sync.get(["bgImageUrl"], function (get) {
 		if (imageUrl.includes("http")) {
 			document.getElementById("setBackgroundStyle").style.backgroundImage = "url(" + imageUrl + ")";
 		} else {
-			document.getElementById("setBackgroundStyle").style.backgroundImage = "url(" + chrome.extension.getURL('/PUT_YOUR_IMAGE_HERE/' + imageUrl) + ")";
+			document.getElementById("setBackgroundStyle").style.backgroundImage = "url( + chrome.extension.getURL('/PUT_YOUR_IMAGES_HERE/' + imageUrl) + )";
 		}
 	}
 });
