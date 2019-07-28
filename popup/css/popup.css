@@ -1,0 +1,45 @@
+html {
+	height: 216px;
+	width: 200px;
+	text-align: center;
+}
+
+body {
+	margin: 5;
+}
+
+#bgColor, #bgImage {
+	height: 35px;
+	width: 35px;
+}
+
+ul {
+	width: 65%;
+	padding-left: 0;
+	margin: auto;
+}
+
+ul li {
+	padding-top: 5px;
+	padding-bottom: 5px;
+    list-style-type: none;
+	
+}
+
+#inline {
+	display: inline-flex;
+}
+
+#bgImageUrl {
+	width: 100%;
+}
+
+#preview {
+	height: 100px;
+	width: 100px;
+	background-color: #1F2023;
+}
+
+preview {
+	font-size: 25px;
+}
