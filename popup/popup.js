@@ -1,16 +1,6 @@
-function setColor() {
-	chrome.storage.sync.set({ "bgColor": document.getElementById("bgColor").value });
-}
-
-function getColor() {
-	chrome.storage.sync.get(["bgColor"], function (get) {
-		get.bgColor !== undefined ? document.getElementById("bgColor").value = get.bgColor : '';
-	});
-}
-
-function init() {
-	getColor();
-	document.getElementById("bgColor").addEventListener("input", setColor);
-}
-
-setTimeout(init);
+chrome.storage.local.get(['bgColor'], ({ bgColor }) => {
+  const input = document.getElementById('bgColor');
+  input.addEventListener('input', () => chrome.storage.local.set({ bgColor: input.value }));
+  input.addEventListener('blur', () => chrome.storage.sync.set({ bgColor: input.value }));
+  if (bgColor) input.value = bgColor;
+});

@@ -1,0 +1,9 @@
+* text=auto
+
+*.png  binary
+
+.gitattributes export-ignore
+.gitignore export-ignore
+.prettierrc export-ignore
+build.sh export-ignore
+README.md export-ignore

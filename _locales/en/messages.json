@@ -1,8 +1,8 @@
 {
-	"extName": {
-		"message": "Empty New Tab Page - Select Your Background."
-	},
-	"extDescription": {
-		"message": "The new tab page is now empty, you can select the background color of your choice."
-	}
+  "extName": {
+    "message": "Empty New Tab Page - Select Your Background."
+  },
+  "extDescription": {
+    "message": "The new tab page is now empty, you can select the background color of your choice."
+  }
 }
